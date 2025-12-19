@@ -1,3 +1,8 @@
+package br.com.hilquias.main;
+
+
+import br.com.hilquias.domain.Posto;
+
 import java.util.Scanner;
 
 public class Main {
@@ -6,7 +11,7 @@ public class Main {
         Posto posto = new Posto();
         String login;
         int passowrd;
-        int option;
+        byte option;
 
         System.out.println("--POSTO DE GASOLINA--");
         System.out.println("LOGIN: ");
@@ -22,7 +27,7 @@ public class Main {
             System.out.println("4 - EXIBIR VALOR TOTAL");
             System.out.println("0 - SAIR");
             System.out.println("Escolha uma das opções:");
-            option = scanner.nextInt();
+            option = scanner.nextByte();
 
             switch (option) {
                 case 0 -> System.exit(0);
