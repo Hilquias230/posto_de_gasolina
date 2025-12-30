@@ -2,27 +2,27 @@ package br.com.hilquias.domain;
 
 import java.util.Scanner;
 
-public class Posto {
+public class Station {
     static Scanner scanner = new Scanner(System.in);
     private double total;
 
-    public void gasolina() {
+    public void gasoline() {
         System.out.println("--GASOLINA--");
         System.out.println("Valor da gasolina: 6,17 R$");
         System.out.println("Diga quanto queres litro: ");
-        int litrosGasolina = scanner.nextInt();
-        total += litrosGasolina * 6.17;
+        int litersGasoline = scanner.nextInt();
+        total += litersGasoline * 6.17;
     }
 
-    public void alcool() {
+    public void alcohol() {
         System.out.println("--ÁLCOOL--");
         System.out.println("Valor do álcool: 4,23 R$");
         System.out.println("Diga quanto queres litro: ");
-        int litrosAlcool = scanner.nextInt();
-        total += litrosAlcool * 4.23;
+        int litersAlcohol = scanner.nextInt();
+        total += litersAlcohol * 4.23;
     }
 
-    public void conveniencia() {
+    public void convenience() {
         System.out.println("--LOJA DE CONVENIÊNCIA--");
         System.out.println("1 - SALGADINH0");
         System.out.println("2 - GELO");
@@ -38,8 +38,10 @@ public class Posto {
         }
     }
 
-    public void exibir() {
+    public void display() {
+        System.out.println("----TOTAL----");
         System.out.println("O VALOR TOTAL DEU " + total + " R$");
+        System.out.println("----------------");
     }
 
 }
