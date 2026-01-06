@@ -1,19 +1,19 @@
 package br.com.hilquias.domain;
 
 public class Account {
-    private final String username;
-    private final int password;
+    private final String USERNAME;
+    private final int PASSWORD;
 
-    public Account(String username, int password) {
-        this.username = username;
-        this.password = password;
+    public Account(String USERNAME, int PASSWORD) {
+        this.USERNAME = USERNAME;
+        this.PASSWORD = PASSWORD;
     }
 
     @Override
     public String toString() {
         return "---PERFIL---\n" +
-                "Nome de usuário = " + username +
-                "\nSua senha = " + password +
+                "Nome de usuário = " + USERNAME +
+                "\nSua senha = " + PASSWORD +
                 "\n -----------------------";
     }
 
